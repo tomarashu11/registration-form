@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>College Club Registration Form</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f2f2f2;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        form {
+            background: white;
+            padding: 20px;
+            max-width: 600px;
+            margin: auto;
+            border-radius: 8px;
+            box-shadow: 0px 0px 5px #aaa;
+        }
+        label {
+            font-weight: bold;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin: 8px 0 15px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .radio-group, .checkbox-group {
+            margin-bottom: 15px;
+        }
+        button {
+            padding: 10px 20px;
+            margin-right: 10px;
+            border: none;
+            background: #4CAF50;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button[type="reset"] {
+            background: #f44336;
+        }
+    </style>
+</head>
+
+<body>
+
+<h1>College Club Registration Form</h1>
+
+<form>
+
+    <!-- Full Name -->
+    <label>Full Name:</label>
+    <input type="text" placeholder="Enter your full name" required>
+
+    <!-- Roll Number -->
+    <label>Roll Number:</label>
+    <input type="text" placeholder="Enter roll number" required>
+
+    <!-- Department -->
+    <label>Department:</label>
+    <input type="text" placeholder="Enter your department" required>
+
+    <!-- Year of Study -->
+    <label>Year of Study:</label>
+    <select required>
+        <option value="">Select Year</option>
+        <option>1st Year</option>
+        <option>2nd Year</option>
+        <option>3rd Year</option>
+        <option>4th Year</option>
+    </select>
+
+    <!-- Gender -->
+    <label>Gender:</label>
+    <div class="radio-group">
+        <input type="radio" name="gender" value="male" required> Male<br>
+        <input type="radio" name="gender" value="female"> Female<br>
+        <input type="radio" name="gender" value="other"> Other
+    </div>
+
+    <!-- Club Options -->
+    <label>Clubs Interested In:</label>
+    <div class="checkbox-group">
+        <input type="checkbox" value="sports"> Sports Club<br>
+        <input type="checkbox" value="music"> Music Club<br>
+        <input type="checkbox" value="tech"> Technical Club<br>
+        <input type="checkbox" value="dance"> Dance Club<br>
+        <input type="checkbox" value="literature"> Literature Club
+    </div>
+
+    <!-- Email -->
+    <label>Email Address:</label>
+    <input type="email" placeholder="Enter email" required>
+
+    <!-- Contact Number -->
+    <label>Contact Number:</label>
+    <input type="tel" placeholder="Enter contact number" required>
+
+    <!-- Date of Birth -->
+    <label>Date of Birth:</label>
+    <input type="date" required>
+
+    <!-- Upload Photo -->
+    <label>Upload Profile Photo:</label>
+    <input type="file" required>
+
+    <!-- Reason for joining -->
+    <label>Reason for Joining / Short Description:</label>
+    <textarea rows="4" placeholder="Why do you want to join?" required></textarea>
+
+    <!-- Buttons -->
+    <button type="submit">Submit</button>
+    <button type="reset">Reset</button>
+
+</form>
+
+</body>
+</html>
